@@ -29,7 +29,7 @@ struct ContentView: View {
                 Section {
                     Picker("", selection: $pizza.pizzaSizeIndex) {
                         ForEach(0 ..< Pizza.pizzaSizes.count) {
-                            Text(Pizza.pizzaSizes[0]).tag($0)
+                            Text(Pizza.pizzaSizes[$0]).tag($0)
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())
